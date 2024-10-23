@@ -14,19 +14,18 @@ export function Events() {
         <span>EVENTS</span>
         <span className="stroke-text">BY US</span>
       </div>
-      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 overflow-hidden">
+      <div className="grid h-56 grid-cols-2 gap-4 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel pauseOnHover>
-          <div className="flex space-x-4">
-            <img src={image1} alt="Event 1" className="w-64 object-cover" />
-            <img src={image2} alt="Event 2" className="w-64 object-cover" />
-            <img src={image3} alt="Event 3" className="w-64 object-cover" />
-            <img src={image4} alt="Event 4" className="w-64 object-cover" />
-            {/* Repeat images for effect */}
-            <img src={image1} alt="Event 1" className="w-64 object-cover" />
-            <img src={image2} alt="Event 2" className="w-64 object-cover" />
-            <img src={image3} alt="Event 3" className="w-64 object-cover" />
-            <img src={image4} alt="Event 4" className="w-64 object-cover" />
-          </div>
+          <img src={image1} alt="Event 1" className="w-full h-full object-cover" />
+          <img src={image2} alt="Event 2" className="w-full h-full object-cover" />
+          <img src={image3} alt="Event 3" className="w-full h-full object-cover" />
+          <img src={image4} alt="Event 4" className="w-full h-full object-cover" />
+        </Carousel>
+        <Carousel indicators={false}>
+          <img src={image1} alt="Event 1" className="w-full h-full object-cover" />
+          <img src={image2} alt="Event 2" className="w-full h-full object-cover" />
+          <img src={image3} alt="Event 3" className="w-full h-full object-cover" />
+          <img src={image4} alt="Event 4" className="w-full h-full object-cover" />
         </Carousel>
       </div>
     </div>
