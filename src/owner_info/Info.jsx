@@ -1,6 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import owner_pfp from "../assets/owner.jpeg";
+import p2 from "../assets/g2.jpeg";
+import p4 from "../assets/g4.jpeg";
+import p5 from "../assets/g1.jpeg";
+import p6 from "../assets/g3.jpeg";
 const Info = () => {
   return (
     <section className="text-white body-font relative overflow-hidden">
@@ -29,18 +33,18 @@ const Info = () => {
               <img
                 alt="owner"
                 className="w-full h-full object-cover mb-4 "
-                src="https://dummyimage.com/600x400"
+                src={owner_pfp}
               />
               <div className="flex w-full">
                 <img
                   alt="owner"
                   className="w-1/2 object-cover pr-2 "
-                  src="https://dummyimage.com/300x200"
+                  src={p2}
                 />
                 <img
                   alt="owner"
                   className="w-1/2 object-cover pl-2 "
-                  src="https://dummyimage.com/301x201"
+                  src={p4}
                 />
               </div>
             </div>
@@ -51,11 +55,18 @@ const Info = () => {
               Meet Our Owner
             </h1>
             <p className="leading-relaxed text-lg text-white">
-              John Doe, our dedicated gym owner, has over 15 years of experience
-              in the fitness industry. Passionate about health and fitness, he
-              has built this gym to provide the best training environment. His
-              vision is to help members achieve their fitness goals, making the
-              gym a welcoming place for everyone.
+              Mr. Kaushlendra Singh Chauhan, the director of KSC Wellness pvt.
+              Ltd. Gym, is a highly qualified fitness professional. He holds
+              degrees in Bachelor of Physical Education (B.P.Ed) and Master of
+              Physical Education (M.P.Ed), along with a Postgraduate Diploma in
+              Yoga. His skills include a Black Belt in Karate and a Red Belt in
+              Taekwondo. Mr. Chauhan's certifications are extensive, including
+              ASCA Level 1, ISSA Personal Trainer, Gold’s Gym Functional
+              Trainer, IFSI Advanced Personal Trainer, NSDC PMKVY Personal
+              Trainer, First Aid, Basic Life Support (BLS), and Advanced
+              Cardiovascular Life Support (ACLS). His well-rounded expertise
+              makes him a strong leader and fitness authority at KSC Wellness
+              Gym.
             </p>
           </div>
         </div>
@@ -71,21 +82,21 @@ const Info = () => {
                 <img
                   alt="gym"
                   className="w-full object-cover h-full object-center block "
-                  src="https://dummyimage.com/400x300"
+                  src={p5}
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <img
                   alt="gym"
                   className="w-full object-cover h-full object-center block "
-                  src="https://dummyimage.com/401x301"
+                  src={p6}
                 />
               </div>
               <div className="md:p-2 p-1 w-full">
                 <img
                   alt="gym"
                   className="w-full h-full object-cover object-center block "
-                  src="https://dummyimage.com/600x400"
+                  src={p2}
                 />
               </div>
             </div>
@@ -94,21 +105,21 @@ const Info = () => {
                 <img
                   alt="event"
                   className="w-full h-full object-cover object-center block "
-                  src="https://dummyimage.com/601x401"
+                  src={p6}
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <img
                   alt="event"
                   className="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/402x302"
+                  src={p4}
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <img
                   alt="event"
                   className="w-full object-cover h-full object-center block "
-                  src="https://dummyimage.com/403x303"
+                  src={p2}
                 />
               </div>
             </div>

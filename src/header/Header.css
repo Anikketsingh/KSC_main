@@ -1,18 +1,54 @@
+/* Notification Bar */
+.notification-bar {
+    width: 100%;
+    background-color: rgb(255, 123, 0); /* Customize the background color */
+    color: white; /* Text color */
+    padding: 0.5rem 0;
+    position: fixed; /* Fix it at the top */
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure it stays on top */
+    overflow: hidden; /* Hide text that goes beyond the container */
+}
+
+.scrolling-text {
+    white-space: nowrap; /* Prevent the text from wrapping */
+    display: inline-block;
+    animation: scrollText 15s linear infinite; /* Control speed and repeat infinitely */
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Start from right */
+    }
+    100% {
+        transform: translateX(-100%); /* End at left */
+    }
+}
+
+/* Header styles */
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    z-index: 998; /* Ensure it stays behind the notification bar */
+  
 }
 
+/* Logo styling */
 .logo {
-    width:100px;
-    height:100px;
+    width: 7rem;
+    position: relative; /* Make the logo position relative */
+    top: 1.5rem; /* Lower the logo to be below the notification bar */
 }
 
+/* Navigation menu */
 .header-menu {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem; /* Reduce gap between buttons */
     color: white;
+    margin: 0; /* Remove any default margin */
 }
 
 .header-menu > li:hover {
@@ -20,15 +56,28 @@
     cursor: pointer;
 }
 
+/* Responsive styles for mobile */
 @media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding-top: 1rem; /* Reduce padding further on mobile */
+    }
+
     .header > :nth-child(2) {
         position: fixed;
         right: 2rem;
         z-index: 99;
     }
+
     .header-menu {
         flex-direction: column;
         background-color: var(--appColor);
-        padding: 2rem;
+        padding: 1.5rem;
+        gap: 1rem; /* Reduce gap on mobile */
+    }
+
+    /* Lower logo on mobile as well */
+    .logo {
+        top: 1rem; /* Adjust top value for mobile */
     }
 }

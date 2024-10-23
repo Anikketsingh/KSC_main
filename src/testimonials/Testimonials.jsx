@@ -39,9 +39,9 @@ const Testimonials = () => {
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-black tracking-widest text-M">EMAIL</h2>
-              <a className="text-orange-500 leading-relaxed">example@email.com</a>
+              <a className="text-orange-500 leading-relaxed">kscwellnesspvtltd@gmail.com</a>
               <h2 className="title-font font-semibold text-black tracking-widest text-M mt-4">PHONE</h2>
-              <p className="leading-relaxed text-black">123-456-7890</p>
+              <p className="leading-relaxed text-black">+91 9244280023</p>
             </div>
           </div>
         </div>

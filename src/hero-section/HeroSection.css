@@ -109,6 +109,7 @@
     right: 3rem;
     top: 2rem;
     color: black;
+    z-index: 100000;
 }
 
 .heart-rate {

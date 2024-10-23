@@ -9,7 +9,7 @@ import Programs from './programs/Programs';
 import Reasons from './reasons/Reasons';
 import Events from './Events/Events';
 import Testimonials from './testimonials/Testimonials';
-import Gallery from './gallery/Gallery';
+import Gallery from './Gallery/Gallery';
 import Info from './owner_info/Info';
 const HomePage = () => (
   <>
